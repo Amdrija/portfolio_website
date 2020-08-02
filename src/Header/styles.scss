@@ -1,0 +1,102 @@
+@import '../assets/scss/variables.scss';
+@import '../assets/scss/icons.scss';
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1em;
+  z-index: 9999;
+  background-color: $background-color;
+}
+
+.title {
+  padding: 1em;
+  padding-left: 2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.title-link {
+  text-decoration: none;
+}
+
+.title h1 {
+  font-family: $font-family;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: $text-color;
+  text-align: left;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 1em;
+  text-decoration: none;
+  color: $text-color;
+  padding: 0.5em;
+  text-align: center;
+  transition: border $transition-length;
+  border: 1px solid transparent;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  border: 1px solid $accent-color;
+}
+
+.nav-item.active {
+  background-color: $accent-color;
+  color: $background-color;
+  border-radius: $border-radius;
+}
+
+#github {
+  margin-right: 2em;
+  border: none;
+  filter: invert(100%) sepia() saturate(10000%) hue-rotate(173deg)
+    brightness(0.16);
+  transition: filter $transition-length;
+}
+
+// to change the color of the svg on hover from black to accent color
+#github:hover {
+  filter: invert(100%) sepia() saturate(10000%) hue-rotate(280deg)
+    brightness(0.8);
+}
+
+@media (max-width: $medium-breakpoint) {
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .title {
+    flex: 0 1 5em;
+  }
+
+  .nav-item {
+    margin: 0.5em;
+  }
+}
+
+@media (max-width: $small-breakpoint) {
+  #github {
+    display: none;
+  }
+
+  .title {
+    padding-left: 1em;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-right: 1em;
+  }
+}

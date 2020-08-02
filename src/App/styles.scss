@@ -1,0 +1,22 @@
+@import '../assets/scss/variables.scss';
+.content {
+  position: relative;
+  top: 10em;
+  //because projects have 0.25em padding on all sides
+  //so its 2em - 0.25em
+  margin: 0 1.75em;
+}
+
+@media (max-width: $medium-breakpoint) {
+  .content {
+    top: 7em;
+  }
+}
+
+@media (max-width: $small-breakpoint) {
+  .content {
+    //because projects have 0.25em padding on all sides
+    // so its 1em - 0.25em
+    margin: 0 0.75em;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../assets/scss/variables.scss';
+
+footer {
+  padding: 4em 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 0.75em;
+  font-weight: 300;
+}
