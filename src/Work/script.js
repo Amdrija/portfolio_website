@@ -1,8 +1,8 @@
 import ProjectComponent from '../Project/index.vue';
-import imgRestaurantPage from '../assets/images/restaurant_page.jpg';
-import imgWeatherApp from '../assets/images/weather_app.jpg';
-import imgToDoList from '../assets/images/todo_list_app.jpg';
-import imgSortingAlgorithm from '../assets/images/sorting_algorithm.jpg';
+import imgRestaurantPage from '../assets/images/restaurant_page_mac.jpg';
+import imgWeatherApp from '../assets/images/weather_app_macbook.jpg';
+import imgToDoList from '../assets/images/todo_list_app_macbook.jpg';
+import imgSortingAlgorithm from '../assets/images/sorting_algorithm_mac2.jpg';
 
 export default {
   name: 'Work',
