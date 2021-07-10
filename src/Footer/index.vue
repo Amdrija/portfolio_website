@@ -1,7 +1,7 @@
 <template>
   <!-- TODO: Add Sitemap-->
   <footer>
-    <p>Copyright © {{year}} Andrija Jelenkovic. All rights reserved.</p>
+    <p>Copyright © 2020 Andrija Jelenkovic. All rights reserved.</p>
   </footer>
 </template>
 <script src="./script.js"></script>

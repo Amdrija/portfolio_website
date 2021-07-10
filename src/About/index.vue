@@ -8,9 +8,9 @@
       <div class="skills-text">
         <h3>Skills</h3>
         <ul class="skill-list">
-          <li v-for="skill in skills" v-bind:key="skill" class="skill">
-            <div class="icon" v-bind:class="'icon-'+skill"></div>
-            <div class="skill-name">{{skill}}</div>
+          <li v-for="skill in skills" v-bind:key="skill.icon" class="skill">
+            <div class="icon" v-bind:class="'icon-'+skill.icon"></div>
+            <div class="skill-name">{{skill.name}}</div>
           </li>
         </ul>
       </div>
